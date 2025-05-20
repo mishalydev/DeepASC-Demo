@@ -4,8 +4,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="cid:css-99d622a7-b09d-4ecb-b6de-0cda4c5d89cf@mhtml.blink" />
 
-  <title>Deep Active Speech Cancellation with Multi-Band Mamba Network</title>
-  <meta property="og:title" content="Active Audio Cancellation with Multi-Band Mamba Network">
+  <title>Deep Active Speech Cancellation with Mamba-Masking Network</title>
+  <meta property="og:title" content="Deep Active Speech Cancellation with Mamba-Masking Network">
   <meta property="og:type" content="article">
   <!-- FIXME(shillingford): add final URL -->
   <meta property="og:url" content="">
@@ -35,7 +35,7 @@
 <body>
   <p class="main">
 
-  <h1>Deep Active Speech Cancellation with Multi-Band Mamba Network</h1>
+  <h1>Deep Active Speech Cancellation with Mamba-Masking Network</h1>
 
   <div class="fig-teaser">
     <!-- TODO ADD TEASER IMG -->
@@ -43,13 +43,15 @@
 
   <div class="abs">
     <p>
-      We present a novel deep learning framework for Active Speech Cancellation (ASC), advancing beyond Active Noise
-      Cancellation (ANC) methods by effectively canceling both noise and speech signals. The proposed Multi-Band Mamba
-      architecture segments input audio into distinct frequency bands, enabling precise anti-signal generation and
-      improved phase alignment across frequencies for superior cancellation performance. Additionally, we introduce an
-      optimization-driven loss function that provides near-optimal supervisory signals for anti-signal generation.
-      Experimental results demonstrate substantial performance gains, achieving up to 7.2dB improvement in ANC scenarios
-      and 6.2dB in ASC, significantly outperforming existing methods. </p>
+      We present a novel deep learning network for Active Speech Cancellation (ASC), advancing beyond Active Noise Cancellation (ANC) 
+      methods by effectively canceling both noise and speech signals. The proposed Mamba-Masking architecture introduces a masking 
+      mechanism that directly interacts with the encoded reference signal, enabling adaptive and precisely aligned anti-signal 
+      generation—even under rapidly changing, high-frequency conditions, as commonly found in speech. Complementing this, a multi-band 
+      segmentation strategy further improves phase alignment across frequency bands. 
+      Additionally, we introduce an optimization-driven loss function that provides near-optimal supervisory signals for anti-signal 
+      generation. Experimental results demonstrate substantial performance gains, achieving up to 7.2dB improvement in ANC scenarios 
+      and 6.2dB in ASC, significantly outperforming existing methods.
+    </p>
   </div>
 
   <h1>Model</h1>
